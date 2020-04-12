@@ -1,0 +1,8 @@
+#palka1 {
+    position:relative;
+    border: solid black;
+    margin-left: 20%;
+    height:0px;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(40deg);
+}
