@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ephemeral soul</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reEphemeral_soul.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center col-12 font-weight-bold mt-2" onclick="rehomeAuthor()">Ephemeral soul</h1>
+
+            <hr class="offset-3 col-6 mt-4">
+
+            <h2 class="mt-4 col-12 text-center" id="SoulCharName">Hinata Ray</h2>
+
+            <img src="/img/reEphemeral_soul/reEphemeral_soulHinata.png" alt="" class="offset-1 col-4 mt-2" id="SoulCharPhoto">
+
+            <div class="col-4 mt-5 pt-5 offset-1">
+                <h4>
+                    <p  id="SoulCharText1">В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+                    <p  id="SoulCharText2">Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований.</p>
+                </h4>
+
+                <div class="text-center">
+                    <h5 class="pt-5 d-inline" onclick="SoulMom()" id="SoulMomSymbol">◉</h5> 
+                    <h1 class="d-inline">—</h1> 
+                    <h5 class="d-inline" onclick="SoulShiro()" id="SoulShiroSymbol">o</h5>
+                    <h1 class="d-inline">—</h1> 
+                    <h5 class="d-inline" onclick="SoulDad()" id="SoulDadSymbol">o</h5>  
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function SoulMom() {
+            SoulCharName.textContent = "Hinata Ray"
+
+            SoulMomSymbol.textContent = "◉"
+            SoulShiroSymbol.textContent = "o"
+            SoulDadSymbol.textContent = "o"
+
+            SoulCharText1.textContent = "В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок."
+            SoulCharText2.textContent = "Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований."
+
+            SoulCharPhoto.src = "/img/reEphemeral_soul/reEphemeral_soulHinata.png"
+        }
+
+        function SoulShiro() {
+            SoulCharName.textContent = "Shiro Ray"
+
+            SoulMomSymbol.textContent = "o"
+            SoulShiroSymbol.textContent = "◉"
+            SoulDadSymbol.textContent = "o"
+
+            SoulCharText1.textContent = "Not everyone can create something worthwhile"
+            SoulCharText1.textContent = "Not everyone can create something worthwhile"
+
+            SoulCharPhoto.src = "/img/reEphemeral_soul/1112.png"
+        }
+
+        function SoulDad() {
+            SoulCharName.textContent = "William Ray"
+
+            SoulMomSymbol.textContent = "o"
+            SoulShiroSymbol.textContent = "o"
+            SoulDadSymbol.textContent = "◉"
+
+            SoulCharText1.textContent = "Not everyone can create something worthwhile"
+            SoulCharText1.textContent = "Not everyone can create something worthwhile"
+
+            SoulCharPhoto.src = "/img/reEphemeral_soul/1112.png"
+        }
+    </script>
+      
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
