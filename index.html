@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+              2020
+            </div>
+
+            <div class="col-8 mt-5 fadein">
+              <img src="img/index/shiroIndex1.png" alt=""  width="100%" id="indexPhoto1">
+              <img src="img/index/shiroIndex2.png" alt=""  width="100%" id="indexPhoto2">
+            </div>
+            
+            <div class="col-3 text-right" id="indexLogo">
+              <h1 class="font-weight-bold" id="indexTitle"><a href="reHome.html">Re:born</a></h1> 
+              <span id="indexSecret"></span>
+              <h3 id="indexQuote">Time will heal the wounds</h3>  
+              <h5 class="pt-5" onclick="indexShiro()" id="indexShiroSymbol">◉</h5> 
+              <h1>|</h1> 
+              <h5 onclick="indexBake()" id="indexBakeSymbol">o</h5> 
+            </div>
+
+            <div class="offset-10 col-1 text-right" id="navigation">
+              
+            </div>
+        </div>
+      </div>
+
+
+      <script>
+        function indexBake() {
+          indexBakeSymbol.textContent = "◉"
+          indexShiroSymbol.textContent = "o"
+
+          /*indexSecret.textContent = "B̸̨̛̟͚͇͖̞̦̗͕̥͈̪̱̋̐̋̃̆̀͛̊̚ą̶̛̛͔͂̂̈̔͌͐͗̔̆̀̈́́̐̔̾͑̅͊̆͂͆̑̃̔͌̚͘͝ķ̶̡̯̥̝̱͓̱͎̙̝̰̙̇̾̈̈́͜͝ͅe̶̖͕̺͚̝̠͇̯̳̱̘̻͆͂̈́̀͐͗̃͌͂̂͒̈́̌̽̾̏̌͐̍͝͝͠͝ͅn̵̬̭̣̾̊e̵̢̡̨͍͇͍̣̜̫̲̟̊͊͌̀̄̋̑̈́̅͂͝ͅk̶̨̢̧̨̦̺̝̪̱̖̰̤͈̻͉͚͖̳͇̮͈̮̭̪̳̖̥͚͔̠͊̅̓̇̄̋̅̀͝o̵̼͉̖͇̘̖͓̓͌̇̓̄͑̎̌́͊̚͠-̷̛̛̯̙̫̞̍̋̓̽̀̉̃̉͐̉̀͗̆́̄̐͘̚͘̕͝͠͠͠s̵̡̥͓̰͙͈͍̝̖͓̪̫̰̥͔͓̦̜̫̏͂́͑̃̍͛͑̈͆́͆͐̾̀̽̈͜͜͝ä̶̧̛̛̛͉̗̦͚̜̖̟̪̭̱̙̺͎͍̦́̎͆̂̊̃͂̽͛̿̽̇́̄̀͝͝m̴̧̨̧͇̩̗͔̺͚͇̙̻̪̺̫͕̝̟͕̪͙̰̈̅́͛͆͐̌̐͝͝ā̴͎͔̣̲̋̐̂̓̈́̿̄̽̎̉̈́̈́̽́̇̄̄͌̌̄̓̆̿͋͆̀̔̏̕͠͝"*/
+
+          indexQuote.textContent = "Not everyone can create something worthwhile"
+
+          indexPhoto1.src = "/img/index/usoIndex1.png"
+          indexPhoto2.src = "/img/index/usoIndex2.png"
+        }
+
+        function indexShiro() {
+          indexBakeSymbol.textContent = "o"
+          indexShiroSymbol.textContent = "◉"
+
+          /*indexSecret.textContent = " "*/
+
+          indexQuote.textContent = "Time will heal the wounds"
+
+          indexPhoto1.src = "/img/index/shiroIndex1.png"
+          indexPhoto2.src = "/img/index/shiroIndex2.png"
+        }
+      </script>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
