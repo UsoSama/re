@@ -16,31 +16,55 @@
 
         <div class="mt-5 col-2 text-center offset-2">
           <a href="#Story"><h2 id="rehomeStCh">Story</h2></a> 
-          <h2 id="rehomeConEx">Contacts</h2> 
+          <a href="#Contacts"><h2 id="rehomeConEx">Contacts</h2></a> 
         </div>
 
         <div id="shiro" class="col-4 mt-5 pt-5 pb-5"><img src="img/reHome/rehomeShiro.png" alt="" width="100%" id="rehomeShiro" ></div> 
 
         <div class="mt-5 col-2 text-center">
-          <h2 id="rehomeStCh">Characters</h2> 
+          <a href="#Characters"><h2 id="rehomeStCh">Characters</h2></a>  
           <h2 id="rehomeConEx" onclick="rehomeExit()">Exit</h2>
         </div>
 
         <hr class="col-10 offset-1">
 
-        <h1 class="text-center col-12 font-weight-bold mt-2"><a href="#" name="Story">Story</a></h1> 
-
-    <div class="col-8 offset-2 mt-4">
+        <h1 class="text-center col-12 font-weight-bold mt-2"><a href="#" name="Story">STORY</a></h1> 
+        <div class="col-8 offset-2 mt-4">
            <h4>
-            <p> ....</p>
+            <p>Тут должен быть текст</p>
+            <p>Абзац</p>
+            <p>И еще один</p>
+            <p>Красивая картиночка с Широ тоже типа тут</p>
+          </h4> 
+        </div>
+
+        <hr class="col-10 offset-1">
+
+        <h1 class="text-center col-12 font-weight-bold mt-2"><a href="#" name="Characters">CHARACTERS</a></h1> 
+        <div class="col-8 offset-2 mt-4">
+           <h4>
             <p>Чтобы познакомиться с персонажами Re:born, выберите интересующий Вас отрезок времени:</p>
           </h4> 
         </div>
 
-        <img src="/img/reHome/rehomeUniverse1Black.png" alt="" width="100%" class="col-4 mt-5 mb-4 rehomeU1black" onclick="rehomeUniverse1()">  
-        <img src="/img/reHome/rehomeUnivers2Black.png" alt="" width="100%" class="col-4 mt-5 mb-4 rehomeU2" onclick="rehomeUniverse2()">
-        <img src="/img/reHome/rehomeUniverse3Black.png" alt="" width="100%" class="col-4 mt-5 mb-4 rehomeU2" onclick="rehomeUniverse3()">
+        <img src="/img/reHome/rehomeUniverse1Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU1black" onclick="rehomeUniverse1()">  
+        <img src="/img/reHome/rehomeUnivers2Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU2" onclick="rehomeUniverse2()">
+        <img src="/img/reHome/rehomeUniverse3Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU2" onclick="rehomeUniverse3()">
 
+
+        <hr class="col-10 offset-1">
+
+        <h1 class="text-center col-12 font-weight-bold mt-2"><a href="#" name="Contacts">CONTACTS</a></h1> 
+        <div class="col-8 offset-2 mt-4 text-center">
+           <h4>
+            <p>Контактные данные для быстрой связи с нами ^3^</p>
+          </h4> 
+        </div>
+
+        <a href="https://vk.com/bakenekosama" class="text-center col-4 offset-2 mt-5 mb-4" target="_blank"><img src="/img/reContacts/vk.png" alt=""></a> 
+        <a href="https://twitter.com/bakes_house" class="text-center col-4 mt-5 mb-4" target="_blank"><img src="/img/reContacts/twitter.png" alt=""></a> 
+
+        <hr class="col-10 offset-1">
       </div>
     </div>
 
@@ -59,7 +83,7 @@
             document.location.href = "index.html";
           } else {
             setTimeout('rehomeShiro.src = "img/reHome/rehomeShiroGlitch.png"', 0);
-            setTimeout('rehomeShiro.src = "img/reHome/rehomeShiro.png"', 1500);
+            setTimeout('rehomeShiro.src = "img/reHome/rehomeShiro.png"', 1000);
           }
         })
         rehomeShiro.src = "/img/rehome/glitch_2020-5-5_20-19-52.gif" 
@@ -81,7 +105,7 @@
       function rehomeUniverse1() {
         Swal.fire({
           title: 'Ephemeral soul',
-          text: 'literary universe',
+          text: 'текст1',
           confirmButtonColor: 'rgb(255, 099, 058)',
           confirmButtonText: 'Подробнее...',
         }).then((result) => {
@@ -94,7 +118,7 @@
       function rehomeUniverse2() {
         Swal.fire({
           title: 'Rebirth',
-          text: 'literary universe',
+          text: 'текст2',
           confirmButtonColor: 'rgb(255, 099, 058)',
           confirmButtonText: 'Подробнее...',
         }).then((result) => {
@@ -107,7 +131,7 @@
       function rehomeUniverse3() {
         Swal.fire({
           title: 'Back to the roots',
-          text: 'literary universe',
+          text: 'текст3',
           confirmButtonColor: 'rgb(255, 099, 058)',
           confirmButtonText: 'Подробнее...',
         }).then((result) => {

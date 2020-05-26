@@ -11,15 +11,15 @@
   <body>
     <div class="container-fluid">
         <div class="row">
-            <h1 class="text-center col-12 font-weight-bold mt-2" onclick="rehomeAuthor()">Ephemeral soul</h1>
+            <h1 class="text-center col-12 font-weight-bold mt-2"><a href="/reHome.html" id="SoulName">Ephemeral soul</a></h1>
 
             <hr class="offset-3 col-6 mt-4">
 
             <h2 class="mt-4 col-12 text-center" id="SoulCharName">Hinata Ray</h2>
 
-            <img src="/img/reEphemeral_soul/reEphemeral_soulHinata.png" alt="" class="offset-1 col-4 mt-2" id="SoulCharPhoto">
+            <img src="/img/reEphemeral_soul/reEphemeral_soulHinata.png" alt="" class="offset-1 col-4 mt-2" id="SoulCharPhoto" onclick="UsoChar()">
 
-            <div class="col-4 mt-5 pt-5 offset-1">
+            <div class="col-4 mt-3 pt-3 offset-1">
                 <h4>
                     <p  id="SoulCharText1">В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
                     <p  id="SoulCharText2">Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований.</p>
@@ -33,10 +33,26 @@
                     <h5 class="d-inline" onclick="SoulDad()" id="SoulDadSymbol">o</h5>  
                 </div>      
             </div>
+
+            <hr class="offset-3 col-6 mt-4">
+            
         </div>
     </div>
 
     <script>
+
+        function UsoChar() {
+            //тут долженть быть глючный фон исо (ПАМЯТКА)
+            setTimeout(() => {
+                SoulName.textContent = "Тебе нравится то, что ты видишь?"
+            }, 1000);
+            setTimeout(() => {
+                SoulCharName.textContent = "Мне нет"
+            }, 2000);
+            
+        }
+
+
         function SoulMom() {
             SoulCharName.textContent = "Hinata Ray"
 
@@ -48,8 +64,9 @@
             SoulCharText2.textContent = "Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований."
 
             SoulCharPhoto.src = "/img/reEphemeral_soul/reEphemeral_soulHinata.png"
-        }
 
+            
+        }
         function SoulShiro() {
             SoulCharName.textContent = "Shiro Ray"
 

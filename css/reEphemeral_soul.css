@@ -12,3 +12,13 @@ html, body {
 p {
     text-indent: 1.5em
 }
+
+A {
+    text-decoration: none;
+    color: black;
+}
+
+A:hover {
+    text-decoration: none;
+    color: black;
+}
