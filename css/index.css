@@ -7,6 +7,8 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Poiret One', cursive;
+    cursor: default;
+    background-color: white;
 }
 
 #indexLogo{
@@ -14,14 +16,20 @@ html, body {
     height: 100%;
 }
 
+.help {
+    cursor: help;
+}
+
 A {
     text-decoration: none;
     color: black;
+    cursor: help;
 }
 
 A:hover {
     text-decoration: none;
     color: black;
+    cursor: help;
 }
 
 @keyframes fade {

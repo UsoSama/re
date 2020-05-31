@@ -8,22 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <link rel="stylesheet" href="/css/reHome.css">
+    <link rel="stylesheet" href="/css/keyframes_appearance.css">
+    <link rel="stylesheet" href="/css/down(footer).css">
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <h1 class="text-center col-12 font-weight-bold mt-2" onclick="rehomeAuthor()">| Re:born |</h1>
+        <h1 class="text-center col-12 font-weight-bold mt-2 help" onclick="rehomeAuthor()">| Re:born |</h1>
 
         <div class="mt-5 col-2 text-center offset-2">
           <a href="#Story"><h2 id="rehomeStCh">Story</h2></a> 
           <a href="#Contacts"><h2 id="rehomeConEx">Contacts</h2></a> 
         </div>
 
-        <div id="shiro" class="col-4 mt-5 pt-5 pb-5"><img src="img/reHome/rehomeShiro.png" alt="" width="100%" id="rehomeShiro" ></div> 
+        <div id="shiro" class="col-4 mt-5 pt-5 pb-5"><a href="/img/uso/2.zip"><img src="img/reHome/rehomeShiro.png" alt="" width="100%" id="rehomeShiro" ></a></div> 
 
         <div class="mt-5 col-2 text-center">
           <a href="#Characters"><h2 id="rehomeStCh">Characters</h2></a>  
-          <h2 id="rehomeConEx" onclick="rehomeExit()">Exit</h2>
+          <h2 class="help" id="rehomeConEx" onclick="rehomeExit()">Exit</h2>
         </div>
 
         <hr class="col-10 offset-1">
@@ -31,12 +33,11 @@
         <h1 class="text-center col-12 font-weight-bold mt-2"><a href="#" name="Story">STORY</a></h1> 
         <div class="col-8 offset-2 mt-4">
            <h4>
-            <p>Тут должен быть текст</p>
-            <p>Абзац</p>
-            <p>И еще один</p>
-            <p>Красивая картиночка с Широ тоже типа тут</p>
+            <p><b>«Re:born»</b> – литературная вселенная, события которой разворачиваются в Великобритании нашего времени.</p>
+            <p>Трагичная история Широ началась в старом доме с зияющей дырой вместо крыши, продолжилась в старшей школе в веселой компании, а закончилась проливным дождем на блеклой, мраморной панели.</p>
           </h4> 
         </div>
+        <a href="/img/uso/3.zip" class="col-4 offset-4"><img src="/img/reHome/rehomeLittleShiro.png" alt="" width="100%"></a> 
 
         <hr class="col-10 offset-1">
 
@@ -47,10 +48,8 @@
           </h4> 
         </div>
 
-        <img src="/img/reHome/rehomeUniverse1Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU1black" onclick="rehomeUniverse1()">  
-        <img src="/img/reHome/rehomeUnivers2Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU2" onclick="rehomeUniverse2()">
-        <img src="/img/reHome/rehomeUniverse3Black.png" alt="" width="100%" class="col-3 mt-5 mb-4 offset-1 rehomeU2" onclick="rehomeUniverse3()">
-
+        <figure class="col-4 mt-5 mb-4 offset-1 rehomeU1black help" onclick="rehomeUniverse1()"><img src="/img/reHome/rehomeUniverse1.png" alt="" width="100%"></figure> 
+        <figure  class="col-4 mt-5 mb-4 offset-1 rehomeU2 help" onclick="rehomeUniverse2()"><img src="/img/reHome/rehomeUnivers2.png" alt="" width="100%"></figure> 
 
         <hr class="col-10 offset-1">
 
@@ -94,18 +93,23 @@
           title: 'Re:born —',
           text: 'literary universe',
           footer: '©Bakeneko-sama',
+          confirmButtonText: 'Перейти на страницу автора',
           confirmButtonColor: 'rgb(255, 099, 058)',
           imageUrl: '/img/rehome/rehomeLogo.png',
           imageWidth: 400,
           imageHeight: 400,
           imageAlt: 'Custom image',
+        }).then((result) => {
+          if (result.value) {
+            document.location.href = "bakeneko.html";
+          }
         })
       }
 
       function rehomeUniverse1() {
         Swal.fire({
           title: 'Ephemeral soul',
-          text: 'текст1',
+          text: 'В тот день так ярко светило солнце. Мама напевала какую-то незамысловатую мелодию, в то время как папазтарательно зашивал порваную штанину - сам виноват, все предупреждали, что на той тропинке очень много колючек. Еще совсем маленькая Широ весело играла с плюшевым мишкой',
           confirmButtonColor: 'rgb(255, 099, 058)',
           confirmButtonText: 'Подробнее...',
         }).then((result) => {
@@ -118,7 +122,7 @@
       function rehomeUniverse2() {
         Swal.fire({
           title: 'Rebirth',
-          text: 'текст2',
+          text: 'Прогуляться было определенно лучшей идеей, что предлагал Дэн за последнее время. И пускай они идут забирать Эмилили с кружков, факт один - они идут вместе. Широ бормочет что-то грозное себе под нос, когда Лайр случайно задевает ее рукой. Из проклятий в адрес друга ее выводит звонкий голос Эмилил',
           confirmButtonColor: 'rgb(255, 099, 058)',
           confirmButtonText: 'Подробнее...',
         }).then((result) => {

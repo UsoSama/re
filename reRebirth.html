@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reEphemeral_soul.css">
+    <link rel="stylesheet" href="/css/keyframes_appearance.css">
   </head>
-  <body>
-    <div class="container-fluid">
+  <body id="main">
+    <div class="container-fluid" id="field">
         <div class="row">
-            <h1 class="text-center col-12 font-weight-bold mt-2"><a href="/reHome.html">Rebirth</a></h1>
+            <h1 class="text-center col-12 font-weight-bold mt-2" id="RebirthName">Rebirth</a></h1>
 
             <hr class="offset-3 col-6 mt-4">
 
@@ -19,10 +20,11 @@
 
             <img src="/img/reRebirth/reRebirthDan.png" alt="" class="offset-1 col-4 mt-2" id="RebirthCharPhoto">
 
-            <div class="col-4 mt-3 pt-3 offset-1">
+            <div class="col-5 mt-3 pt-3 offset-1">
                 <h4>
-                    <p  id="RebirthCharText1">В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
-                    <p  id="RebirthCharText2">Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований.</p>
+                    <p id="RebirthCharText1">Даниэль Лайр - юный музыкант, в будущем - примерный семьянин и чудесный фотограф.</p>
+                    <p id="RebirthCharText2">Заработав репутацию прилежного ученика, он подолгу сидит в кабинете музыки и вдохновенно перебирает клавиши старого фортепиано. Ему не нужна цельная композиция - звучание прекрасно в данный момент, прекратить и обдумать - сродни смерти.</p>
+                    <p id="RebirthCharText3" class="font-italic">"Просто... Черт, ты же знаешь, я готов помочь! Вопрос лишь в том, позволишь ли ты мне это?"</p>
                 </h4>
 
                 <div class="text-center">
@@ -35,50 +37,17 @@
             </div>
 
             <hr class="offset-3 col-6 mt-4">
+
+            <div class="col-2 offset-5 text-center mt-2 mb-2">
+                <a href="/reHome.html"><h5 id="Exit">Вернуться назад</h5></a>  
+            </div>
             
         </div>
     </div>
 
-    <script>
-        function RebirthDan() {
-            RebirthCharName.textContent = "Daniel Lair"
+    <script src="/js/reRebirth.js"></script>
 
-            RebirthDanSymbol.textContent = "◉"
-            RebirthShiroSymbol.textContent = "o"
-            RebirthEmilySymbol.textContent = "o"
 
-            RebirthCharText1.textContent = "В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок."
-            RebirthCharText2.textContent = "Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение первоочередных требований."
-
-            RebirthCharPhoto.src = "/img/reRebirth/reRebirthDan.png"
-        }
-
-        function RebirthShiro() {
-            RebirthCharName.textContent = "Shiro Ray"
-
-            RebirthDanSymbol.textContent = "o"
-            RebirthShiroSymbol.textContent = "◉"
-            RebirthEmilySymbol.textContent = "o"
-
-            RebirthCharText1.textContent = "Not everyone can create something worthwhile"
-            RebirthCharText1.textContent = "Not everyone can create something worthwhile"
-
-            RebirthCharPhoto.src = "/img/reEphemeral_soul/1112.png"
-        }
-
-        function RebirthEmily() {
-            RebirthCharName.textContent = "Emily Lair"
-
-            RebirthDanSymbol.textContent = "o"
-            RebirthShiroSymbol.textContent = "o"
-            RebirthEmilySymbol.textContent = "◉"
-
-            RebirthCharText1.textContent = "Not everyone can create something worthwhile"
-            RebirthCharText1.textContent = "Not everyone can create something worthwhile"
-
-            RebirthCharPhoto.src = "/img/reEphemeral_soul/1112.png"
-        }
-    </script>
       
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
