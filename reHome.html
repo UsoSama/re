@@ -4,6 +4,7 @@
     <title>Re:born</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="reborn story">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -67,84 +68,7 @@
       </div>
     </div>
 
-    <script>
-      function rehomeExit() {
-        Swal.fire({
-        title: 'Вы уверены?',
-        icon: 'warning',
-        showCancelButton: true,
-        cancelButtonText: 'Остаться',
-        confirmButtonColor: 'rgb(255, 099, 058)',
-        cancelButtonColor: 'rgb(0, 0, 0)',
-        confirmButtonText: 'Перейти на главную страницу'
-        }).then((result) => {
-          if (result.value) {
-            document.location.href = "index.html";
-          } else {
-            setTimeout('rehomeShiro.src = "img/reHome/rehomeShiroGlitch.png"', 0);
-            setTimeout('rehomeShiro.src = "img/reHome/rehomeShiro.png"', 1000);
-          }
-        })
-        rehomeShiro.src = "/img/rehome/glitch_2020-5-5_20-19-52.gif" 
-      }
-
-      function rehomeAuthor() {
-        Swal.fire({
-          title: 'Re:born —',
-          text: 'literary universe',
-          footer: '©Bakeneko-sama',
-          confirmButtonText: 'Перейти на страницу автора',
-          confirmButtonColor: 'rgb(255, 099, 058)',
-          imageUrl: '/img/rehome/rehomeLogo.png',
-          imageWidth: 400,
-          imageHeight: 400,
-          imageAlt: 'Custom image',
-        }).then((result) => {
-          if (result.value) {
-            document.location.href = "bakeneko.html";
-          }
-        })
-      }
-
-      function rehomeUniverse1() {
-        Swal.fire({
-          title: 'Ephemeral soul',
-          text: 'В тот день так ярко светило солнце. Мама напевала какую-то незамысловатую мелодию, в то время как папазтарательно зашивал порваную штанину - сам виноват, все предупреждали, что на той тропинке очень много колючек. Еще совсем маленькая Широ весело играла с плюшевым мишкой',
-          confirmButtonColor: 'rgb(255, 099, 058)',
-          confirmButtonText: 'Подробнее...',
-        }).then((result) => {
-          if (result.value) {
-            document.location.href = "reEphemeral_soul.html";
-          }
-        })
-      }
-
-      function rehomeUniverse2() {
-        Swal.fire({
-          title: 'Rebirth',
-          text: 'Прогуляться было определенно лучшей идеей, что предлагал Дэн за последнее время. И пускай они идут забирать Эмилили с кружков, факт один - они идут вместе. Широ бормочет что-то грозное себе под нос, когда Лайр случайно задевает ее рукой. Из проклятий в адрес друга ее выводит звонкий голос Эмилил',
-          confirmButtonColor: 'rgb(255, 099, 058)',
-          confirmButtonText: 'Подробнее...',
-        }).then((result) => {
-          if (result.value) {
-            document.location.href = "reRebirth.html";
-          }
-        })
-      }
-
-      function rehomeUniverse3() {
-        Swal.fire({
-          title: 'Back to the roots',
-          text: 'текст3',
-          confirmButtonColor: 'rgb(255, 099, 058)',
-          confirmButtonText: 'Подробнее...',
-        }).then((result) => {
-          if (result.value) {
-            document.location.href = "reBack_to_the_roots.html";
-          }
-        })
-      }
-    </script>
+    <script src="/js/reHome.js"></script>
       
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

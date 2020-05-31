@@ -20,10 +20,16 @@ p {
 A {
     text-decoration: none;
     color: black;
+    cursor: help;
 }
 
 A:hover {
     text-decoration: none;
     color: black;
+    cursor: help;
+}
+
+.help {
+    cursor: help;
 }
 

@@ -26,3 +26,7 @@ A:hover {
     text-decoration: none;
     color: black;
 }
+
+.help {
+    cursor: help;
+}
